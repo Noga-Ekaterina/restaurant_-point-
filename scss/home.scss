@@ -1,0 +1,8 @@
+@import "_medias.scss";
+
+.content{
+   @include t-u {
+      display: flex;
+      justify-content: space-between;
+   }
+}

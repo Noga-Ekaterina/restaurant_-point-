@@ -1,0 +1,27 @@
+@mixin mob{
+   @media screen and (max-width: 767px) {
+      @content
+   }
+};
+@mixin mob-and-t{
+   @media screen and (max-width: 1919px) {
+      @content
+   }
+};
+@mixin t{
+   @media screen and (min-width: 768px) and (max-width: 1919px) {
+      @content
+   }
+};
+
+@mixin t-u{
+   @media screen and (min-width: 768px) {
+      @content
+   }
+};
+
+@mixin xl{
+   @media screen and (min-width: 1920px) {
+      @content
+   }
+}
