@@ -1,8 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+header {
+  background: #fff;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #open_menu {
+  cursor: pointer;
+}
+@media screen and (min-width: 1920px) {
+  header #logo {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  header #logo {
+    width: 19.8%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header #logo {
+    width: 38%;
+  }
+}
+header #logo img {
+  width: 100%;
+}
+header #phone {
+  cursor: pointer;
+}
+@media screen and (min-width: 1920px) {
+  header #phone {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(143deg, #F57350 23.05%, #F4512D 104.84%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   font: 400 16px "PT Serif";
+}
+
+@media screen and (min-width: 768px) {
+  header, footer {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header, footer {
+    padding: 28px 30px;
+  }
 }
 
 .content {
@@ -16,5 +72,17 @@
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   .content {
     max-width: 824px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .yes_xl {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .no_xl {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

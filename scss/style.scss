@@ -7,7 +7,14 @@
    margin: 0;
    font: 400 16px "PT Serif";
 }
-
+header, footer{
+   @include t-u {
+      padding: 60px;
+   }
+   @include mob {
+      padding: 28px 30px;
+   }
+}
 
 .content{
    margin: auto;
@@ -17,5 +24,15 @@
    }
    @include t {
       max-width: 824px;
+   }
+}
+.yes_xl{
+   @include mob-and-t {
+      display: none;
+   }
+}
+.no_xl{
+   @include xl {
+      display: none;
    }
 }
