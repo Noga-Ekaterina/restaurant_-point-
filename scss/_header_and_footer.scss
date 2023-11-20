@@ -1,12 +1,16 @@
 header{
    background: #fff;
    .content{
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
    }
    #open_menu{
       cursor: pointer;
+      background-image: url(../img/Menu.png);
+      width: 37px;
+      height: 18px;
    }
    #logo{
       @include xl {
@@ -33,6 +37,55 @@ header{
          border-radius: 50%;
          background: linear-gradient(143deg, #F57350 23.05%, #F4512D 104.84%);
          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+      }
+   }
+}
+
+#menu{
+   background: #fff;
+   position: absolute;
+   left: 0;
+   width: 375px;
+   box-sizing: border-box;
+   padding: 0 31px;
+   box-shadow:0px 4px 8px rgba(0, 0, 0, 0.25);
+   height: 0;
+   overflow: hidden;
+   transition: height 1s;
+   @include t-u {
+      top: calc(100% + 60px);
+   }
+   @include mob {
+      top: calc(100% + 28px)
+   }
+   &.open{
+      height: 375px;
+   }
+   li{
+      list-style: none;
+      border-left: 3px solid #000;
+      padding-left: 12px;
+      font-family: Lora;
+      font-size: 28px;
+      margin-top: 25px;
+      &.this_page{
+         border-color: #F4512D;
+      }
+      a{
+         font-size: 28px;
+         font-weight: 400;
+      }
+   }
+
+   >a{
+      display: block;
+      width: fit-content;
+      padding: 14px 20px;
+      border: 1px solid #000;
+      font-size: 14px;
+      margin-top: 15px;
+      &:last-child{
+         margin-bottom: 41px;
       }
    }
 }
