@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Mono&display=swap");
 header {
   background: #fff;
 }
@@ -47,31 +47,36 @@ header #phone {
 * {
   padding: 0;
   margin: 0;
-  font: 400 16px "PT Serif";
+  font: 400 16px "PT Mono";
 }
 
 @media screen and (min-width: 768px) {
-  header, footer {
+  header, main > div, footer {
     padding: 60px;
   }
 }
 @media screen and (max-width: 767px) {
-  header, footer {
+  header, main > div, footer {
     padding: 28px 30px;
   }
 }
 
-.content {
+[class^=content] {
   margin: auto;
 }
 @media screen and (min-width: 1920px) {
-  .content {
+  [class^=content] {
     width: 1200px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {
-  .content {
+  [class^=content] {
     max-width: 824px;
+  }
+}
+@media screen and (max-width: 767px) {
+  [class^=content] {
+    max-width: 315px;
   }
 }
 
@@ -85,4 +90,34 @@ header #phone {
   .no_xl {
     display: none;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .no_mob {
+    display: none;
+  }
+}
+
+.backg_g {
+  background: #F9F9F9;
+}
+
+a, h1 {
+  font-family: Lora;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
