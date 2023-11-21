@@ -56,10 +56,14 @@ header{
       top: calc(100% + 60px);
    }
    @include mob {
+      width: 100%;
       top: calc(100% + 28px)
    }
    &.open{
       height: 375px;
+      @include mob {
+         height: 330px;
+      }
    }
    li{
       list-style: none;
@@ -68,11 +72,14 @@ header{
       font-family: Lora;
       font-size: 28px;
       margin-top: 25px;
+      @include mob {
+         font-size: 20px;
+      }
       &.this_page{
          border-color: #F4512D;
       }
       a{
-         font-size: 28px;
+         font-size: inherit;
          font-weight: 400;
       }
    }

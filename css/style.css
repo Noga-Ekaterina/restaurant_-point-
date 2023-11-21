@@ -67,11 +67,17 @@ header #phone {
 }
 @media screen and (max-width: 767px) {
   #menu {
+    width: 100%;
     top: calc(100% + 28px);
   }
 }
 #menu.open {
   height: 375px;
+}
+@media screen and (max-width: 767px) {
+  #menu.open {
+    height: 330px;
+  }
 }
 #menu li {
   list-style: none;
@@ -81,11 +87,16 @@ header #phone {
   font-size: 28px;
   margin-top: 25px;
 }
+@media screen and (max-width: 767px) {
+  #menu li {
+    font-size: 20px;
+  }
+}
 #menu li.this_page {
   border-color: #F4512D;
 }
 #menu li a {
-  font-size: 28px;
+  font-size: inherit;
   font-weight: 400;
 }
 #menu > a {
@@ -172,6 +183,11 @@ h2, .img p, a, h1 {
 @media screen and (min-width: 1920px) {
   h1 {
     font-size: 56px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 35px;
   }
 }
 

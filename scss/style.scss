@@ -64,6 +64,9 @@ h1{
    @include xl {
       font-size: 56px;
    }
+   @include mob {
+      font-size: 35px
+   }
 }
 a{
    @extend %Lora;
