@@ -6,6 +6,10 @@
    padding: 0;
    margin: 0;
    font: 400 16px "PT Mono";
+
+   @include xl {
+      font-size: 24px;
+   }
 }
 header, main>div, footer{
    @include t-u {
@@ -67,6 +71,27 @@ a{
    text-decoration: none;
 }
 
-.img img{
-   width: 100%;
+.img{
+   img{
+      width: 100%;
+   }
+   p{
+      @extend %Lora;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.7);
+      font-style: italic;
+   }
+}
+
+h2{
+   @extend %Lora;
+   @include xl {
+      font-size: 48px;
+   }
+   @include t {
+      font-size: 28px;
+   }
+   @include mob {
+      font-size: 24px;
+   }
 }

@@ -5,10 +5,29 @@
       display: flex;
       justify-content: space-between;
    }
+   &:not(.content1, header .content){
+      align-items: center;
+      @include mob {
+         text-align: center;
+      }
+   }
+
 }
 h1{
    @include t {
       font-size: min(4.17vw, 42px);
+   }
+}
+.line{
+   width: 51px;
+   height: 4px;
+   margin: 20px 0;
+   background: #000;
+   @include xl {
+      margin-bottom: 30px;
+   }
+   @include mob {
+      margin: 20px auto;
    }
 }
 .content{
@@ -63,5 +82,34 @@ h1{
             margin-left: -11%;
          }
       } 
+   }
+   &2{
+      flex-direction: row-reverse;
+      @include mob {
+         margin-top: 50px;
+      }
+      .block_text{
+         @include xl {
+            width: 610px;
+         }
+         @include t {
+            width: 49.5%;
+         }
+         h2{
+            @include mob {
+               font-size: 28px;
+               margin-top: 10px;
+            }
+         }
+      }
+      .img{
+         @include xl {
+            width: 435px;
+         }
+         @include t {
+            width: 44%;
+            flex-shrink: 0;
+         }
+      }
    }
 }

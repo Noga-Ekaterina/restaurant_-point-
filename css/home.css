@@ -4,10 +4,35 @@
     justify-content: space-between;
   }
 }
+[class^=content]:not(.content1, header .content) {
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  [class^=content]:not(.content1, header .content) {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   h1 {
     font-size: min(4.17vw, 42px);
+  }
+}
+
+.line {
+  width: 51px;
+  height: 4px;
+  margin: 20px 0;
+  background: #000;
+}
+@media screen and (min-width: 1920px) {
+  .line {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .line {
+    margin: 20px auto;
   }
 }
 
@@ -75,5 +100,40 @@
     width: 76.7%;
     margin-right: min(-60px, (824px - 100vw) / 2);
     margin-left: -11%;
+  }
+}
+.content2 {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 767px) {
+  .content2 {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .content2 .block_text {
+    width: 610px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content2 .block_text {
+    width: 49.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content2 .block_text h2 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .content2 .img {
+    width: 435px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content2 .img {
+    width: 44%;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=home.css.map */
