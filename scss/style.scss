@@ -63,6 +63,7 @@ h1{
 
    @include xl {
       font-size: 56px;
+      margin-bottom: 35px;
    }
    @include mob {
       font-size: 35px
