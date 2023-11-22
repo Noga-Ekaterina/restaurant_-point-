@@ -16,6 +16,7 @@
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   h1 {
     font-size: min(4.17vw, 42px);
+    margin-bottom: 15px;
   }
 }
 
@@ -66,7 +67,7 @@
     -moz-column-gap: 20px;
          column-gap: 20px;
     margin-top: 26px;
-    width: 364px;
+    min-width: 364px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -81,6 +82,11 @@
   padding: 14px 20px;
   border: 1px solid #000;
   font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content1 .block_text a {
+    text-wrap: nowrap;
+  }
 }
 @media screen and (max-width: 767px) {
   .content1 .block_text a {
@@ -160,6 +166,16 @@
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   .content4 .block_text {
     width: 364px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content4 h2 {
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content4 p {
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 1920px) {
