@@ -220,4 +220,17 @@ a {
   h2 {
     font-size: 24px;
   }
+}
+
+.border_red {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px dashed #E44D26;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .border_red {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

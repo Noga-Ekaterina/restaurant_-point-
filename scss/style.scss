@@ -99,3 +99,13 @@ h2{
       font-size: 24px;
    }
 }
+
+.border_red{
+   display: block;
+   width: fit-content;
+   border-bottom: 1px dashed #E44D26;
+   margin-top: 20px;
+   @include xl {
+      margin-top: 30px;
+   }
+}

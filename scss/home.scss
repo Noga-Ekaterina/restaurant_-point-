@@ -85,6 +85,9 @@ h1{
    }
    &2{
       flex-direction: row-reverse;
+      @include t {
+         padding-top: calc(-2500% / 176 + 2575px / 22);
+      }
       @include mob {
          margin-top: 50px;
       }
@@ -109,6 +112,30 @@ h1{
          @include t {
             width: 44%;
             flex-shrink: 0;
+         }
+      }
+   }
+
+   &4{
+      flex-direction: row-reverse;
+      @include t {
+         justify-content: flex-end;
+         column-gap: 9%;
+      }
+      .block_text{
+         @include xl {
+            width: 487px;
+         }
+         @include t {
+            width: 364px;
+         }
+      }
+      .img{
+         @include xl {
+            width: 469px;
+         }
+         @include t {
+            width: 34.2%;
          }
       }
    }
