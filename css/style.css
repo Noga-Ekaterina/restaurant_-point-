@@ -153,6 +153,12 @@ header #phone {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 1919px) {
   .yes_xl {
     display: none;

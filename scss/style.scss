@@ -33,6 +33,12 @@ header, main>div, footer{
       max-width: 315px;
    }
 }
+p{
+   @include t {
+      font-size: 16px;
+   }
+}
+
 .yes_xl{
    @include mob-and-t {
       display: none;
