@@ -2,6 +2,9 @@
 @import "_medias.scss";
 @import "_header_and_footer.scss";
 
+body{
+   overflow-x: hidden;
+}
 *{
    padding: 0;
    margin: 0;

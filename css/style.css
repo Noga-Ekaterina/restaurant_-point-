@@ -112,6 +112,10 @@ header #phone {
   margin-bottom: 41px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -123,9 +127,6 @@ header #phone {
   }
 }
 
-header, main > div:not(.swiper_block), footer {
-  overflow: hidden;
-}
 @media screen and (min-width: 768px) {
   header, main > div:not(.swiper_block), footer {
     padding: 60px;
