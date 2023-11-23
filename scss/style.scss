@@ -14,7 +14,7 @@ body{
       font-size: 24px;
    }
 }
-header, main>div:not(.swiper_block), footer{
+header, main>div:not(.block100), footer{
    @include t-u {
       padding: 60px;
    }
@@ -23,7 +23,7 @@ header, main>div:not(.swiper_block), footer{
    }
 }
 
-[class^="content"]:not(.swiper){
+[class^="content"]:not(.block100 .content){
    margin: auto;
 
    @include xl {
@@ -85,10 +85,10 @@ a{
 }
 
 .img{
-   img{
+   >img{
       width: 100%;
    }
-   p{
+   >p{
       @extend %Lora;
       text-align: center;
       color: rgba(0, 0, 0, 0.7);
@@ -118,11 +118,31 @@ h2{
       margin-top: 30px;
    }
 }
-.swiper{
+.block100 .content{
    width: 100%;
    max-width: 1920px;
+   margin: 0 auto;
+   position: relative;
 
-   &-slide img{
+   img{
       width: 100%;
+   }
+}
+.content .mouse{
+   position: absolute;
+   text-align: center;
+   right: calc(50% - 127px);
+   bottom: 25px;
+   @include xl {
+      bottom: 65px;
+   }
+
+   img{
+      width: auto;
+   }
+   p{
+      @extend %Lora;
+      color: #fff;
+      font-size: 16px;
    }
 }
