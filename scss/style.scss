@@ -11,7 +11,7 @@
       font-size: 24px;
    }
 }
-header, main>div, footer{
+header, main>div:not(.swiper_block), footer{
    @include t-u {
       padding: 60px;
    }
@@ -20,7 +20,7 @@ header, main>div, footer{
    }
 }
 
-[class^="content"]{
+[class^="content"]:not(.swiper){
    margin: auto;
 
    @include xl {
@@ -115,6 +115,11 @@ h2{
       margin-top: 30px;
    }
 }
-.swiper-slide img{
+.swiper{
    width: 100%;
+   max-width: 1920px;
+
+   &-slide img{
+      width: 100%;
+   }
 }

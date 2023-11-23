@@ -123,32 +123,35 @@ header #phone {
   }
 }
 
+header, main > div:not(.swiper_block), footer {
+  overflow: hidden;
+}
 @media screen and (min-width: 768px) {
-  header, main > div, footer {
+  header, main > div:not(.swiper_block), footer {
     padding: 60px;
   }
 }
 @media screen and (max-width: 767px) {
-  header, main > div, footer {
+  header, main > div:not(.swiper_block), footer {
     padding: 28px 30px;
   }
 }
 
-[class^=content] {
+[class^=content]:not(.swiper) {
   margin: auto;
 }
 @media screen and (min-width: 1920px) {
-  [class^=content] {
+  [class^=content]:not(.swiper) {
     width: 1200px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {
-  [class^=content] {
+  [class^=content]:not(.swiper) {
     max-width: 824px;
   }
 }
 @media screen and (max-width: 767px) {
-  [class^=content] {
+  [class^=content]:not(.swiper) {
     max-width: 315px;
   }
 }
@@ -241,6 +244,10 @@ a {
   }
 }
 
+.swiper {
+  width: 100%;
+  max-width: 1920px;
+}
 .swiper-slide img {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
