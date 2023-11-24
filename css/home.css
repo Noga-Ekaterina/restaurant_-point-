@@ -75,19 +75,6 @@
     margin-top: 5px;
   }
 }
-.content1 .block_text a {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 14px 20px;
-  border: 1px solid #000;
-  font-size: 14px;
-}
-@media screen and (min-width: 768px) and (max-width: 1919px) {
-  .content1 .block_text a {
-    text-wrap: nowrap;
-  }
-}
 @media screen and (max-width: 767px) {
   .content1 .block_text a {
     margin-top: 15px;

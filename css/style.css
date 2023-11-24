@@ -100,12 +100,6 @@ header #phone {
   font-weight: 400;
 }
 #menu > a {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 14px 20px;
-  border: 1px solid #000;
-  font-size: 14px;
   margin-top: 15px;
 }
 #menu > a:last-child {
@@ -205,6 +199,20 @@ body {
 a {
   color: #000;
   text-decoration: none;
+}
+
+.a_button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14px 20px;
+  border: 1px solid #000;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .a_button {
+    text-wrap: nowrap;
+  }
 }
 
 .img > img {

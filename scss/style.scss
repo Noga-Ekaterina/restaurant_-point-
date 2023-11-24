@@ -83,6 +83,16 @@ a{
    color: #000;
    text-decoration: none;
 }
+.a_button{
+   display: block;
+   width: fit-content;
+   padding: 14px 20px;
+   border: 1px solid #000;
+   font-size: 14px;
+   @include t {
+      text-wrap: nowrap;
+   }
+}
 
 .img{
    >img{
