@@ -200,4 +200,35 @@
   .content5 .block_text {
     width: 281px;
   }
+}
+.content6 {
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 1920px) {
+  .content6 .block_text {
+    width: 580px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content6 .block_text {
+    width: 366px;
+  }
+}
+.content6 .block_text a {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .content6 .block_text a {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .content6 .img {
+    width: 516px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content6 .img {
+    width: 44.4%;
+  }
 }/*# sourceMappingURL=home.css.map */

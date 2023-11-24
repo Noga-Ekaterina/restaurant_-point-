@@ -169,4 +169,29 @@ h1{
          }
       }
    }
+   &6{
+      flex-direction: row-reverse;
+      .block_text{
+         @include xl {
+            width: 580px;
+         }
+         @include t {
+            width: 366px;
+         }
+         a{
+            margin-top: 20px;
+            @include xl {
+               margin-top: 30px;
+            }
+         }
+      }
+      .img{
+         @include xl {
+            width: 516px;
+         }
+         @include t {
+            width: 44.4%;
+         }
+      }
+   }
 }
