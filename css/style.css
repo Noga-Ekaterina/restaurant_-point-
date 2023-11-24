@@ -244,6 +244,11 @@ a {
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .border_red {
+    margin-inline: auto;
+  }
+}
 
 .block100 .content {
   width: 100%;
@@ -258,7 +263,7 @@ a {
 .content .mouse {
   position: absolute;
   text-align: center;
-  right: calc(50% - 127px);
+  right: calc(50% - 63.7px);
   bottom: 25px;
 }
 @media screen and (min-width: 1920px) {

@@ -117,6 +117,9 @@ h2{
    @include xl {
       margin-top: 30px;
    }
+   @include mob {
+      margin-inline: auto;
+   }
 }
 .block100 .content{
    width: 100%;
@@ -131,7 +134,7 @@ h2{
 .content .mouse{
    position: absolute;
    text-align: center;
-   right: calc(50% - 127px);
+   right: calc(50% - 63.7px);
    bottom: 25px;
    @include xl {
       bottom: 65px;
