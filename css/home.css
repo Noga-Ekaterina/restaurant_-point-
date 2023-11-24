@@ -187,4 +187,30 @@
   .content4 .img {
     width: 34.2%;
   }
+}
+@media screen and (min-width: 1920px) {
+  .content5 .img {
+    width: 488px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content5 .img {
+    width: 41.5%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .content5 .block_text {
+    width: 495px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content5 .block_text {
+    position: relative;
+    left: -90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content5 .block_text {
+    width: 281px;
+  }
 }/*# sourceMappingURL=home.css.map */

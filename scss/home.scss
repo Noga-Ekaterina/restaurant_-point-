@@ -153,4 +153,27 @@ h1{
          }
       }
    }
+   
+   &5{
+      .img{
+         @include xl {
+            width: 488px;
+         }
+         @include t {
+            width: 41.5%;
+         }
+      }
+      .block_text{
+         @include xl {
+            width: 495px;
+         }
+         @include t-u {
+            position: relative;
+            left: -90px;
+         }
+         @include t {
+            width: 281px;
+         }
+      }
+   }
 }
