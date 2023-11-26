@@ -92,3 +92,74 @@ header{
       }
    }
 }
+
+footer{
+   .content{
+      @include t-u {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+   .big{
+      margin-bottom: 20px;
+      @include t {
+         font-size: min(2.9vw, 28px);
+      }
+   }
+   #tel{
+      font-size: 36px;
+      color: #F4512D;
+      @include xl {
+         font-size: 38px;
+      }
+      @include t {
+         font-size: min(3.9vw, 36px);
+      }
+   }
+   #footer_{
+      &right{
+         @include xl {
+            display: flex;
+            column-gap: 80px;
+         }
+         @include mob {
+            margin-top: 20px;
+         }
+      }
+      &adres{
+         *{
+            opacity: 0.4;
+            line-height: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            @include mob {
+               font-size: 14px;
+            }
+         }
+         a{
+            display: block;
+            transition: 0.6s;
+            &:hover{
+               opacity: 1;
+            }
+         }
+      }
+   }
+   #icons{
+      display: flex;
+      column-gap: 20px;
+      @include mob-and-t {
+         margin-top: 20px;
+      }
+      @include mob {
+         justify-content: center;
+      }
+      a{
+         position: relative;
+         transition: 0.6s;
+         &:hover{
+            top: -10px;
+         }
+      }
+   }
+}

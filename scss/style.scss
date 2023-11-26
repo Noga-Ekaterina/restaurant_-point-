@@ -167,3 +167,9 @@ h2{
       height: 100%;
    }
 }
+.big{
+   @extend h2;
+   @include xl {
+      font-size: 28px;
+   }
+}

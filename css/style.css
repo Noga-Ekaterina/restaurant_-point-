@@ -106,6 +106,87 @@ header #phone {
   margin-bottom: 41px;
 }
 
+@media screen and (min-width: 768px) {
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer .big {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  footer .big {
+    font-size: min(2.9vw, 28px);
+  }
+}
+footer #tel {
+  font-size: 36px;
+  color: #F4512D;
+}
+@media screen and (min-width: 1920px) {
+  footer #tel {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  footer #tel {
+    font-size: min(3.9vw, 36px);
+  }
+}
+@media screen and (min-width: 1920px) {
+  footer #footer_right {
+    display: flex;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer #footer_right {
+    margin-top: 20px;
+  }
+}
+footer #footer_adres * {
+  opacity: 0.4;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  footer #footer_adres * {
+    font-size: 14px;
+  }
+}
+footer #footer_adres a {
+  display: block;
+  transition: 0.6s;
+}
+footer #footer_adres a:hover {
+  opacity: 1;
+}
+footer #icons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media screen and (max-width: 1919px) {
+  footer #icons {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer #icons {
+    justify-content: center;
+  }
+}
+footer #icons a {
+  position: relative;
+  transition: 0.6s;
+}
+footer #icons a:hover {
+  top: -10px;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -179,7 +260,7 @@ body {
   background: #F9F9F9;
 }
 
-.content .mouse p, h2, .img > p, a, h1 {
+.content .mouse p, h2, .big, .img > p, a, h1 {
   font-family: Lora;
   font-weight: 700;
 }
@@ -225,17 +306,17 @@ a {
 }
 
 @media screen and (min-width: 1920px) {
-  h2 {
+  h2, .big {
     font-size: 48px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {
-  h2 {
+  h2, .big {
     font-size: 28px;
   }
 }
 @media screen and (max-width: 767px) {
-  h2 {
+  h2, .big {
     font-size: 24px;
   }
 }
@@ -293,4 +374,10 @@ a {
 #map iframe {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+  .big {
+    font-size: 28px;
+  }
 }/*# sourceMappingURL=style.css.map */
