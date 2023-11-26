@@ -183,6 +183,11 @@ h1{
             @include xl {
                margin-top: 30px;
             }
+            @include mob {
+               box-sizing: border-box;
+               width: 100%;
+               text-align: center;
+            }
          }
       }
       .img{

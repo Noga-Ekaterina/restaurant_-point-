@@ -222,6 +222,13 @@
     margin-top: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .content6 .block_text a {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1920px) {
   .content6 .img {
     width: 516px;
