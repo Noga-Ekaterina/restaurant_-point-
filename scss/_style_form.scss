@@ -1,0 +1,67 @@
+#block_shadow{
+   position: fixed;
+   inset: 0;
+   z-index: 999;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.5);
+   >div{
+      display: none;
+   width: 428px;
+   position: relative;
+   }
+}
+.block_form{
+   background: #fff;
+   box-sizing: border-box;
+   padding: 40px 35px;
+   max-height: calc(100vh - 40px);
+   overflow-y: auto;
+   .h_form{
+      @extend %Lora;
+      font-size: 24px;
+      text-align: center
+   }
+   form{
+      padding: 0 22px;
+   }
+   *:not(.a_button){
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+   }
+   input:not(.a_button){
+      padding: 10px 20px;
+      font-size: 15px;
+      line-height: 30px;
+      border-radius: 3px;
+      border: 1px solid #CECECE;
+      &::placeholder{
+         color: #ABABAB;
+      }
+   }
+   label{
+      line-height: 30px;
+      font-size: 18px;
+      margin: 14px 0 2px;
+   }
+   .a_button{
+      background: none;
+      margin: 24px auto 0;
+   }
+}
+.close{
+   background: #000;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   width: 28px;
+   height: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: -14px;
+   right: -14px;
+   cursor: pointer;
+}

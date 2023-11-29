@@ -187,6 +187,78 @@ footer #icons a:hover {
   top: -10px;
 }
 
+#block_shadow {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+#block_shadow > div {
+  display: none;
+  width: 428px;
+  position: relative;
+}
+
+.block_form {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 35px;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+.block_form .h_form {
+  font-size: 24px;
+  text-align: center;
+}
+.block_form form {
+  padding: 0 22px;
+}
+.block_form *:not(.a_button) {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.block_form input:not(.a_button) {
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 30px;
+  border-radius: 3px;
+  border: 1px solid #CECECE;
+}
+.block_form input:not(.a_button)::-moz-placeholder {
+  color: #ABABAB;
+}
+.block_form input:not(.a_button)::placeholder {
+  color: #ABABAB;
+}
+.block_form label {
+  line-height: 30px;
+  font-size: 18px;
+  margin: 14px 0 2px;
+}
+.block_form .a_button {
+  background: none;
+  margin: 24px auto 0;
+}
+
+.close {
+  background: #000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  cursor: pointer;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -273,7 +345,7 @@ body {
   background: #F9F9F9;
 }
 
-.content .mouse p, h2, .big, .img > p, a, h1 {
+.content .mouse p, h2, .big, .img > p, a, h1, .block_form .h_form {
   font-family: Lora;
   font-weight: 700;
 }
@@ -300,7 +372,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   padding: 14px 20px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Mono&display=swap');
 @import "_medias.scss";
 @import "_header_and_footer.scss";
+@import "_style_form.scss";
 
 body{
    overflow-x: hidden;
@@ -99,7 +100,7 @@ a{
    display: block;
    width: fit-content;
    padding: 14px 20px;
-   border: 1px solid #000;
+   border: 2px solid #000;
    font-size: 14px;
    @include t {
       text-wrap: nowrap;
