@@ -1,11 +1,11 @@
-const BlockShadow= document.queriSelector("#block_shadow")
+const BlockShadow= document.querySelector("#block_shadow")
 class CloseModal{
 	constructor(block){
 		this.block= document.getElementById(block)
 	}
 	click(){
 		var Th= this;
-		Th.block.queriSelector(".close").onclick=()=>{
+		Th.block.querySelector(".close").onclick=()=>{
 			Th.block.style.display="none";
 			BlockShadow.style.display="none"
 		}
