@@ -6,22 +6,23 @@ class ShowModal{
 		this.button= (this.typeButton=="id") ? document.getElementById(button) : document.getElementsByClassName(button);
 		this.modal= document.getElementById(modal)
 	}
-	show(){
+   start(){
 		var Th= this;
-		blockShadow.style.display= "flex"
-		console.log(Th.modal)
-		Th.modal.style.display= "block"
-	}
-	
-	click(){
-		if(this.typeButton=="id"){
-			this.button.onclick= this.show
-		}else{
-			this.button.forEach((el)=>{
-				el.onclick= this.show
-			})
-		}
-	}
+
+      const show=()=>{
+         blockShadow.style.display= "flex"
+         console.log(Th)
+         Th.modal.style.display= "block"
+      }
+      
+      if(this.typeButton=="id"){
+         this.button.onclick= show
+      }else{
+         this.button.forEach((el)=>{
+            el.onclick= show
+         })
+      }
+   }
 }
 
 class CloseModal{
@@ -36,6 +37,6 @@ class CloseModal{
 		}
 	}
 }
-new ShowModal("phone", "form_phone", "id").click()
+new ShowModal("phone", "form_phone", "id").start()
 new CloseModal("form_phone").click()
 new CloseModal("form_book_an_event").click()
