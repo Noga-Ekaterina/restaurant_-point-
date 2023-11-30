@@ -99,10 +99,10 @@ header #phone {
   font-size: inherit;
   font-weight: 400;
 }
-#menu > a {
+#menu button {
   margin-top: 15px;
 }
-#menu > a:last-child {
+#menu button:last-child {
   margin-bottom: 41px;
 }
 
@@ -374,6 +374,8 @@ a {
   padding: 14px 20px;
   border: 2px solid #000;
   font-size: 14px;
+  background: none;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   .a_button {
