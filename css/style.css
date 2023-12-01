@@ -211,6 +211,7 @@ footer #icons a:hover {
 }
 .block_form .h_form {
   font-size: 24px;
+  letter-spacing: 0.24px;
   text-align: center;
 }
 .block_form form {
@@ -221,18 +222,33 @@ footer #icons a:hover {
   width: 100%;
   box-sizing: border-box;
 }
-.block_form input:not(.a_button) {
+.block_form input:not(.a_button), .block_form select {
   padding: 10px 20px;
   font-size: 15px;
   line-height: 30px;
   border-radius: 3px;
   border: 1px solid #CECECE;
 }
-.block_form input:not(.a_button)::-moz-placeholder {
+.block_form input:not(.a_button)::-moz-placeholder, .block_form select::-moz-placeholder {
   color: #ABABAB;
 }
-.block_form input:not(.a_button)::placeholder {
+.block_form input:not(.a_button)::placeholder, .block_form select::placeholder {
   color: #ABABAB;
+}
+.block_form select {
+  color: #ABABAB;
+}
+.block_form [type=date], .block_form [type=time] {
+  color: #ABABAB;
+}
+.block_form [type=date]:focus, .block_form [type=time]:focus {
+  color: #000;
+}
+.block_form option {
+  color: #000;
+}
+.block_form option[disabled] {
+  display: none;
 }
 .block_form label {
   line-height: 30px;
@@ -345,7 +361,7 @@ body {
   background: #F9F9F9;
 }
 
-.content .mouse p, h2, .big, .img > p, a, h1, .block_form .h_form {
+.content .mouse p, h2, .big, .img > p, .a_button, a, h1, .block_form .h_form {
   font-family: Lora;
   font-weight: 700;
 }

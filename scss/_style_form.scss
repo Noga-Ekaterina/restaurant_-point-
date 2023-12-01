@@ -21,6 +21,7 @@
    .h_form{
       @extend %Lora;
       font-size: 24px;
+      letter-spacing: 0.24px;
       text-align: center
    }
    form{
@@ -31,7 +32,7 @@
       width: 100%;
       box-sizing: border-box;
    }
-   input:not(.a_button){
+   input:not(.a_button), select{
       padding: 10px 20px;
       font-size: 15px;
       line-height: 30px;
@@ -39,6 +40,21 @@
       border: 1px solid #CECECE;
       &::placeholder{
          color: #ABABAB;
+      }
+   }
+   select{
+      color: #ABABAB; 
+   }
+   [type="date"], [type="time"]{
+      color: #ABABAB;
+      &:focus{
+         color: #000;
+      }
+   }
+   option{
+      color: #000;
+      &[disabled]{
+         display: none;
       }
    }
    label{
