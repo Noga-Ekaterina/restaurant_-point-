@@ -65,6 +65,10 @@
    .a_button{
       background: none;
       margin: 24px auto 0;
+      &[disabled]{
+         opacity: 0.4;
+         cursor: default;
+      }
    }
 }
 .close{

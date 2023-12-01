@@ -259,6 +259,10 @@ footer #icons a:hover {
   background: none;
   margin: 24px auto 0;
 }
+.block_form .a_button[disabled] {
+  opacity: 0.4;
+  cursor: default;
+}
 
 .close {
   background: #000;
