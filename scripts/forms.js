@@ -45,3 +45,25 @@ new ShowModal("book_a_table", "form_book_a_table").start()
 new CloseModal("form_phone").click()
 new CloseModal("form_book_an_event").click()
 new CloseModal("form_book_a_table").click()
+
+class ChecForm{
+	constructor(form, typeForm){
+		this.form= document.querySelector('[name="'+form+'"]');
+		this.typeForm= typeForm
+	}
+	start(){
+		var Th=this
+		if(Th.typeForm!="phone"){
+			Th.form.querySelectorAll(".placeholder").forEach((el)=>{
+				el.onchange=()=>{
+					if(el.value.length!=0)
+						el.style.color= "#000"
+					else
+						el.style.color=""
+				}
+			})
+		}
+	}
+}
+new ChecForm("book_an_event").start()
+new ChecForm("book_a_table").start()
