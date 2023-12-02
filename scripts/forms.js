@@ -56,10 +56,14 @@ class ChecForm{
 		if(Th.typeForm!="phone"){
 			Th.form.querySelectorAll(".placeholder").forEach((el)=>{
 				el.onchange=()=>{
-					if(el.value.length!=0)
+					if(el.value.length!=0){
 						el.style.color= "#000"
-					else
+                  el.nextElementSibling.style.opacity= "0"
+               }
+					else{
 						el.style.color=""
+                  el.nextElementSibling.style.opacity= ""
+               }
 				}
 			})
 		}

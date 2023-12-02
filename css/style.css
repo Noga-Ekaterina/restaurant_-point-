@@ -223,11 +223,13 @@ footer #icons a:hover {
   box-sizing: border-box;
 }
 .block_form input:not(.a_button), .block_form select {
+  background: rgba(0, 0, 0, 0);
   padding: 10px 20px;
   font-size: 15px;
   line-height: 30px;
   border-radius: 3px;
   border: 1px solid #CECECE;
+  z-index: 2;
 }
 .block_form input:not(.a_button)::-moz-placeholder, .block_form select::-moz-placeholder {
   color: #ABABAB;
@@ -238,17 +240,31 @@ footer #icons a:hover {
 .block_form select {
   color: #ABABAB;
 }
+.block_form select + .placeholder_text {
+  display: none;
+}
 .block_form [type=date], .block_form [type=time] {
-  color: #ABABAB;
+  color: rgba(0, 0, 0, 0);
 }
 .block_form [type=date]:focus, .block_form [type=time]:focus {
   color: #000;
+}
+.block_form [type=date]:focus + .placeholder_text, .block_form [type=time]:focus + .placeholder_text {
+  opacity: 0;
 }
 .block_form option {
   color: #000;
 }
 .block_form option[disabled] {
   display: none;
+}
+.block_form .placeholder_text {
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 30px;
+  z-index: 1;
+  color: #ABABAB;
+  margin-top: -53.78px;
 }
 .block_form label {
   line-height: 30px;

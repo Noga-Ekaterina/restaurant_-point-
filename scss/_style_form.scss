@@ -33,22 +33,31 @@
       box-sizing: border-box;
    }
    input:not(.a_button), select{
+      background: rgba(0, 0, 0, 0);
       padding: 10px 20px;
       font-size: 15px;
       line-height: 30px;
       border-radius: 3px;
       border: 1px solid #CECECE;
+      z-index: 2;
       &::placeholder{
          color: #ABABAB;
       }
    }
    select{
       color: #ABABAB; 
+
+      +.placeholder_text{
+         display: none;
+      }
    }
    [type="date"], [type="time"]{
-      color: #ABABAB;
+      color: rgba(0, 0, 0, 0);
       &:focus{
          color: #000;
+         +.placeholder_text{
+            opacity: 0;
+         }
       }
    }
    option{
@@ -56,6 +65,14 @@
       &[disabled]{
          display: none;
       }
+   }
+   .placeholder_text{
+      padding: 10px 20px;
+      font-size: 15px;
+      line-height: 30px;
+      z-index: 1;
+      color: #ABABAB;
+      margin-top: -53.78px;
    }
    label{
       line-height: 30px;
