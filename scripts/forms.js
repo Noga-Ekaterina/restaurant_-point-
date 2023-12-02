@@ -53,6 +53,7 @@ class ChecForm{
 	}
 	start(){
 		var Th=this
+		let btn= Th.form.querySelector(".a_button")
 		if(Th.typeForm!="phone"){
 			Th.form.querySelectorAll(".placeholder").forEach((el)=>{
 				el.onchange=()=>{
@@ -66,6 +67,19 @@ class ChecForm{
                }
 				}
 			})
+		}
+		Th.form.oninput=()=>{
+			let arrBoolean=[]
+			Array.from(Th.form.elements).forEach((el, index)=>{
+				if(el.value.length==0)
+					arrBoolean[index]= true
+				else
+					arrBoolean[index]= false
+			})
+			if(arrBoolean.includes(false))
+				btn.setAttribute("disabled", "true")
+			else
+				btn.removeAttribute("disabled")
 		}
 	}
 }
