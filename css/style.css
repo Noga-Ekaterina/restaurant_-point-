@@ -217,6 +217,9 @@ footer #icons a:hover {
 .block_form form {
   padding: 0 22px;
 }
+.block_form form * {
+  position: relative;
+}
 .block_form *:not(.a_button) {
   display: block;
   width: 100%;
@@ -264,7 +267,8 @@ footer #icons a:hover {
   line-height: 30px;
   z-index: 1;
   color: #ABABAB;
-  margin-top: -53.78px;
+  position: absolute;
+  top: 0;
 }
 .block_form label {
   line-height: 30px;
