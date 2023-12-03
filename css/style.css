@@ -198,7 +198,7 @@ footer #icons a:hover {
 }
 #block_shadow > div {
   display: none;
-  width: 428px;
+  width: min(428px, 100vw - 40px);
   position: relative;
 }
 
@@ -297,6 +297,15 @@ footer #icons a:hover {
   top: -14px;
   right: -14px;
   cursor: pointer;
+}
+
+#post_form {
+  font-family: Lora;
+  font-size: 22px;
+  box-sizing: border-box;
+  padding: 40px 35px;
+  text-align: center;
+  background: #fff;
 }
 
 body {

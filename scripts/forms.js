@@ -45,6 +45,7 @@ new ShowModal("book_a_table", "form_book_a_table").start()
 new CloseModal("form_phone").click()
 new CloseModal("form_book_an_event").click()
 new CloseModal("form_book_a_table").click()
+new CloseModal("post_form").click()
 
 class ChecForm{
 	constructor(form){
@@ -80,6 +81,11 @@ class ChecForm{
 			else
 				btn.removeAttribute("disabled")
 		}
+      Th.form.onsubmit=()=>{
+         Th.form.parentElement.parentElement.style.display= "none"
+         document.querySelector('#post_form').style.display= "block"
+         return false
+      }
 	}
 }
 new ChecForm("phone").start()

@@ -21,7 +21,7 @@
          <div class="close"><img src="img/close.png" alt=""></div>
          <div class="block_form">
             <div class="h_form">Заказать звонок</div>
-            <form action="" name="phone"><label for="name1">Имя</label><input type="text" id="name1" name="userName"
+            <form action="" name="phone" method="post"><label for="name1">Имя</label><input type="text" id="name1" name="userName"
                   placeholder="Введите ваше имя"><label for="number1">Телефон</label><input type="text" id="number1"
                   name="number" placeholder="+7 xxx xxx-xx-xx"><input type="submit" value="Заказать звонок" disabled
                   class="a_button"></form>
@@ -31,7 +31,7 @@
          <div class="close"><img src="img/close.png" alt=""></div>
          <div class="block_form">
             <div class="h_form">Забронировать мероприятие</div>
-            <form action="" name="book_an_event">
+            <form action="" name="book_an_event" method="post">
                <label for="type">Тип мироприятия</label>
                <select name="type" id="type" class="placeholder">
                   <option value="" disabled selected>Выберите тип мероприятия</option>
@@ -55,7 +55,7 @@
          <div class="close"><img src="img/close.png" alt=""></div>
          <div class="block_form">
             <div class="h_form">Забронировать стол</div>
-            <form action="" name="book_a_table"><label for="name3">Имя</label><input type="text" id="name3" name="userName"
+            <form action="" name="book_a_table" method="post"><label for="name3">Имя</label><input type="text" id="name3" name="userName"
                   placeholder="Введите ваше имя"><label for="number3">Телефон</label><input type="text" id="number3"
                   name="number" placeholder="+7 xxx xxx-xx-xx">
                   <label for="date2">Желаемая дата</label>
@@ -69,6 +69,11 @@
                   </div>
                   <label for="quantity2">Количество людей</label><input type="number" id="quantity2" placeholder="Введите количество людей"><input type="submit" value="Заявка на мероприятие" disabled class="a_button"></form>
          </div>
+      </div>
+      <div id="post_form">
+         <div class="close"><img src="img/close.png" alt=""></div>
+         Заявка принята, <br>
+         с Вами скоро свяжутся.
       </div>
    </div>
    <header>
