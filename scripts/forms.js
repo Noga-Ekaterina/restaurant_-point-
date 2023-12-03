@@ -47,14 +47,13 @@ new CloseModal("form_book_an_event").click()
 new CloseModal("form_book_a_table").click()
 
 class ChecForm{
-	constructor(form, typeForm){
+	constructor(form){
 		this.form= document.querySelector('[name="'+form+'"]');
-		this.typeForm= typeForm
 	}
 	start(){
 		var Th=this
 		let btn= Th.form.querySelector(".a_button")
-		if(Th.typeForm!="phone"){
+		if(Th.form!=document.forms.phone){
 			Th.form.querySelectorAll(".placeholder").forEach((el)=>{
 				el.onchange=()=>{
 					if(el.value.length!=0){
@@ -71,7 +70,7 @@ class ChecForm{
 		Th.form.oninput=()=>{
 			let arrBoolean=[]
 			Array.from(Th.form.elements).forEach((el, index)=>{
-				if(el.value.length==0)
+				if(el.value.length!=0)
 					arrBoolean[index]= true
 				else
 					arrBoolean[index]= false
@@ -83,5 +82,6 @@ class ChecForm{
 		}
 	}
 }
+new ChecForm("phone").start()
 new ChecForm("book_an_event").start()
 new ChecForm("book_a_table").start()
