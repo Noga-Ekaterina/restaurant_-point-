@@ -16,7 +16,7 @@
    background: #fff;
    box-sizing: border-box;
    padding: 40px 35px;
-   max-height: calc(100vh - 40px);
+   max-height: calc(100vh - 100px);
    overflow-y: auto;
    .h_form{
       @extend %Lora;

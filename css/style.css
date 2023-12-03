@@ -206,7 +206,7 @@ footer #icons a:hover {
   background: #fff;
   box-sizing: border-box;
   padding: 40px 35px;
-  max-height: calc(100vh - 40px);
+  max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
 .block_form .h_form {
