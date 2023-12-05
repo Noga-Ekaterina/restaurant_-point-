@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>О ресторане</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/about_the_restaurant.css">
 </head>
@@ -94,7 +95,29 @@
    </header>
    <main>
       <div class="backg_g block100">
-         <div class="content"></div>
+         <div class="content swiper slider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <picture>
+                     <source media="(max-width: 767px)" src="img/about_the_restaurant/slide1(mob).jpg">
+                     <img src="img/about_the_restaurant/slide1.jpg" alt="">
+                  </picture>
+               </div>
+               <div class="swiper-slide">
+                  <picture>
+                     <source media="(max-width: 767px)" src="img/about_the_restaurant/slide2(mob).jpg">
+                     <img src="img/about_the_restaurant/slide2.jpg" alt="">
+                  </picture>
+               </div>
+               <div class="swiper-slide">
+                  <picture>
+                     <source media="(max-width: 767px)" src="img/about_the_restaurant/slide3(mob).jpg">
+                     <img src="img/about_the_restaurant/slide3.jpg" alt="">
+                  </picture>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
       </div>
       <div class="backg_g">
          <div class="content"></div>
@@ -133,5 +156,7 @@
    <script src="scripts/menu.js"></script>
    <script src="scripts/preloader.js"></script>
    <script src="scripts/forms.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="scripts/swiper.js"></script>
 </body>
 </html>
