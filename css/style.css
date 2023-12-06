@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=PT+Mono&display=swap");
 header {
+  position: relative;
+  z-index: 9;
   background: #fff;
 }
 header .content {
@@ -110,6 +112,11 @@ header #phone {
   footer .content {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .content {
+    text-align: center;
   }
 }
 footer .big {

@@ -1,5 +1,8 @@
 header{
+   position: relative;
+   z-index: 9;
    background: #fff;
+   
    .content{
       position: relative;
       display: flex;
@@ -98,6 +101,9 @@ footer{
       @include t-u {
          display: flex;
          justify-content: space-between;
+      }
+      @include mob {
+         text-align: center;
       }
    }
    .big{
