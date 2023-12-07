@@ -74,11 +74,11 @@ header #phone {
   }
 }
 #menu.open {
-  height: 375px;
+  height: 404px;
 }
 @media screen and (max-width: 767px) {
   #menu.open {
-    height: 330px;
+    height: 359px;
   }
 }
 #menu li {
@@ -102,10 +102,11 @@ header #phone {
   font-weight: 400;
 }
 #menu button {
-  margin-top: 15px;
+  margin-top: 44px;
 }
 #menu button:last-child {
   margin-bottom: 41px;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {

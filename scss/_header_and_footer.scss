@@ -63,9 +63,9 @@ header{
       top: calc(100% + 28px)
    }
    &.open{
-      height: 375px;
+      height: 404px;
       @include mob {
-         height: 330px;
+         height: 359px;
       }
    }
    li{
@@ -89,9 +89,10 @@ header{
 
 
    button{
-      margin-top: 15px;
+      margin-top: 44px;
       &:last-child{
          margin-bottom: 41px;
+         margin-top: 15px;
       }
    }
 }
