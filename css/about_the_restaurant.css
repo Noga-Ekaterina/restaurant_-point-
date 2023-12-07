@@ -1,1 +1,12 @@
-/*# sourceMappingURL=about _the_restaurant.css.map */
+.swiper-pagination {
+  position: static;
+  margin-top: 30px;
+}
+.swiper-pagination-on-bullet {
+  width: 12px;
+  height: 12px;
+  background: #C4C4C4;
+}
+.swiper-pagination-bullet-active {
+  background: #000;
+}/*# sourceMappingURL=about_the_restaurant.css.map */

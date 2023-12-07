@@ -1,0 +1,16 @@
+@import "_medias.scss";
+
+.swiper-pagination{
+   position: static;
+   margin-top: 30px;
+
+   &-on-bullet{
+      width: 12px;
+      height: 12px;
+      background: #C4C4C4;
+
+   }
+   &-bullet-active{
+      background: #000;
+   }
+}
