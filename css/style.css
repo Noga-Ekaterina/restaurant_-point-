@@ -465,6 +465,23 @@ a {
   }
 }
 
+.line {
+  width: 51px;
+  height: 4px;
+  margin: 20px 0;
+  background: #000;
+}
+@media screen and (min-width: 1920px) {
+  .line {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .line {
+    margin: 20px auto;
+  }
+}
+
 .border_red {
   display: block;
   width: -moz-fit-content;

@@ -19,18 +19,7 @@ h1{
       margin-bottom: 15px;
    }
 }
-.line{
-   width: 51px;
-   height: 4px;
-   margin: 20px 0;
-   background: #000;
-   @include xl {
-      margin-bottom: 30px;
-   }
-   @include mob {
-      margin: 20px auto;
-   }
-}
+
 .content{
    &1{
       .block_text{

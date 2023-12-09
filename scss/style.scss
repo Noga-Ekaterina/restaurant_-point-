@@ -134,6 +134,18 @@ h2{
       font-size: 24px;
    }
 }
+.line{
+   width: 51px;
+   height: 4px;
+   margin: 20px 0;
+   background: #000;
+   @include xl {
+      margin-bottom: 30px;
+   }
+   @include mob {
+      margin: 20px auto;
+   }
+}
 
 .border_red{
    display: block;
