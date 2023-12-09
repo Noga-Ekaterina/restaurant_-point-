@@ -14,3 +14,136 @@
       background: #000;
    }
 }
+
+h2{
+   margin-bottom: 50px;
+   @include mob-and-t {
+      margin-bottom: 35px;
+   }
+}
+.line{
+   @include t-u {
+      display: none;
+   }
+}
+.flexSB{
+   display: flex;
+   justify-content: space-between;
+}
+.content{
+   &1{
+      h2{
+         margin-bottom: 40px;
+         @include t {
+            margin-bottom: 25px;
+         }
+         @include mob {
+            margin: 0;
+         }
+      }
+      h2, >p{
+         text-align: center;
+         margin-inline: auto;
+         @include t-u {
+            width: 78.3%;
+         }
+      }
+      ul{
+         flex-wrap: wrap;
+         row-gap: 30px;
+         margin-top: 50px;
+         @include t {
+            column-gap: 48px;
+            max-width: 532px;
+            margin-inline: auto;
+         }
+         @include mob {
+            column-gap: 53px;
+            margin-inline: -21px;
+         }
+
+         li{
+            box-sizing: border-box;
+            position: relative;
+            list-style: none;
+            letter-spacing: 0.14px;
+            @include xl {
+               font-size: 18px;
+               letter-spacing: 0.18px;
+               width: 264px;
+            }
+            @include t {
+               width: 241px;
+            }
+            @include mob {
+               width: calc((100% - 53px) / 2);
+               font-size: 14px;
+               padding-left: 23px;
+               line-height: 20px    
+               
+            }
+
+            &::before{
+               content: "";
+               display: inline-block;
+               aspect-ratio: 4/3;
+               width: 16px;
+               background-image: url(../img/about_the_restaurant/check.png);
+               background-size: 100%;
+               margin-right: 16px;
+               @include mob {
+                  width: 14px;
+                  margin-right: 0;
+                  position: absolute;
+                  left: 0;
+                  top: 6px;
+               }
+            }
+         }
+      }
+      #pluss{
+         margin-top: 80px;
+         @include mob-and-t {
+            flex-wrap: wrap;
+            margin-top: 60px;
+            row-gap: 30px;
+         }
+         @include t {
+            width: 78.3%;
+            margin-inline: auto;
+         }
+         @include mob {
+            margin-inline: -12px;
+         }
+         .plus{
+            text-align: center;
+            @include xl {
+               width: 216px;
+            }
+            width: 220px;
+            @include mob {
+               width: calc((100% - 50px) / 2);
+            }
+            &_h{
+               color: #F4512D;
+               font-size: 65px;
+               letter-spacing: 0.65px;
+               font-family: Lora;
+               font-weight: 700;
+               margin-bottom: 10px;
+               @include xl {
+                  font-size: 100px;
+                  letter-spacing: 1px;
+               }
+               p{
+                  letter-spacing: 0.16px;
+                  line-height: 20px;
+                  @include xl {
+                     font-size: 18px
+                  }
+               }
+            }
+         }
+      }
+   }
+}

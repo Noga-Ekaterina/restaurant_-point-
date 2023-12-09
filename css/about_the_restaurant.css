@@ -9,4 +9,169 @@
 }
 .swiper-pagination-bullet-active {
   background: #000;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1919px) {
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content1 h2 {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content1 h2 {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content1 h2 {
+    margin: 0;
+  }
+}
+.content1 h2, .content1 > p {
+  text-align: center;
+  margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .content1 h2, .content1 > p {
+    width: 78.3%;
+  }
+}
+.content1 ul {
+  flex-wrap: wrap;
+  row-gap: 30px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content1 ul {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+    max-width: 532px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content1 ul {
+    -moz-column-gap: 53px;
+         column-gap: 53px;
+    margin-inline: -21px;
+  }
+}
+.content1 ul li {
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+  letter-spacing: 0.14px;
+}
+@media screen and (min-width: 1920px) {
+  .content1 ul li {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    width: 264px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content1 ul li {
+    width: 241px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content1 ul li {
+    width: calc((100% - 53px) / 2);
+    font-size: 14px;
+    padding-left: 23px;
+    line-height: 20px;
+  }
+}
+.content1 ul li::before {
+  content: "";
+  display: inline-block;
+  aspect-ratio: 4/3;
+  width: 16px;
+  background-image: url(../img/about_the_restaurant/check.png);
+  background-size: 100%;
+  margin-right: 16px;
+}
+@media screen and (max-width: 767px) {
+  .content1 ul li::before {
+    width: 14px;
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
+}
+.content1 #pluss {
+  margin-top: 80px;
+}
+@media screen and (max-width: 1919px) {
+  .content1 #pluss {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    row-gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .content1 #pluss {
+    width: 78.3%;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content1 #pluss {
+    margin-inline: -12px;
+  }
+}
+.content1 #pluss .plus {
+  text-align: center;
+  width: 220px;
+}
+@media screen and (min-width: 1920px) {
+  .content1 #pluss .plus {
+    width: 216px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content1 #pluss .plus {
+    width: calc((100% - 50px) / 2);
+  }
+}
+.content1 #pluss .plus_h {
+  color: #F4512D;
+  font-size: 65px;
+  letter-spacing: 0.65px;
+  font-family: Lora;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1920px) {
+  .content1 #pluss .plus_h {
+    font-size: 100px;
+    letter-spacing: 1px;
+  }
+}
+.content1 #pluss .plus_h p {
+  letter-spacing: 0.16px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1920px) {
+  .content1 #pluss .plus_h p {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=about_the_restaurant.css.map */
