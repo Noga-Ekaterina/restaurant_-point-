@@ -13,6 +13,7 @@
 
 h2 {
   margin-bottom: 50px;
+  text-align: center;
 }
 @media screen and (max-width: 1919px) {
   h2 {
@@ -173,5 +174,55 @@ h2 {
 @media screen and (min-width: 1920px) {
   .content1 #pluss .plus_h p {
     font-size: 18px;
+  }
+}
+.content2 a {
+  margin: -10px auto 40px;
+}
+@media screen and (max-width: 767px) {
+  .content2 a {
+    margin-top: 10px;
+  }
+}
+.content2 .flexSB {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .content2 .flexSB {
+    row-gap: 15px;
+  }
+}
+.content2 .flexSB > div {
+  background: #FFF;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-block: 30px;
+}
+@media screen and (min-width: 768px) {
+  .content2 .flexSB > div {
+    width: calc((100% - 40px) / 3);
+    padding-inline: min(17.0454545455% - 90.4545454545px, 70px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .content2 .flexSB > div {
+    width: calc((100% - 15px) / 2);
+    letter-spacing: 0.16px;
+    padding-inline: 15px;
+  }
+  .content2 .flexSB > div p {
+    font-size: 12px;
+  }
+}
+.content2 .flexSB > div .img {
+  margin-inline: auto;
+  width: 45%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .content2 .flexSB > div .img {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=about_the_restaurant.css.map */

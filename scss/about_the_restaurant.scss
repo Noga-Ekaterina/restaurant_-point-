@@ -17,6 +17,7 @@
 
 h2{
    margin-bottom: 50px;
+   text-align: center;
    @include mob-and-t {
       margin-bottom: 35px;
    }
@@ -141,6 +142,50 @@ h2{
                   @include xl {
                      font-size: 18px
                   }
+               }
+            }
+         }
+      }
+   }
+
+   &2{
+      a{
+         margin: -10px auto 40px;
+         @include mob {
+            margin-top: 10px;
+         }
+      }
+      .flexSB{
+         flex-wrap: wrap;
+         row-gap: 20px;
+         @include mob {
+            row-gap: 15px;
+         }
+
+         >div{
+            background: #FFF;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            padding-block: 30px;
+            @include t-u {
+               width: calc((100% - 40px) / 3);
+               padding-inline: min(calc(1500% / 88 - 995px / 11), 70px);
+            }
+            @include mob {
+               width: calc((100% - 15px) / 2);
+               letter-spacing: 0.16px;
+               padding-inline: 15px;
+               p{
+                  font-size: 12px;
+               }
+            }
+            .img{
+               margin-inline: auto;
+               width: 45%;
+               margin-bottom: 20px;
+               @include mob {
+                  margin-bottom: 10px;
                }
             }
          }
