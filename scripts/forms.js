@@ -70,11 +70,13 @@ class ChecForm{
 		}
 		Th.form.oninput=()=>{
 			let arrBoolean=[]
-			Array.from(Th.form.elements).forEach((el, index)=>{
+			Array.from(Th.form.elements).forEach((el, index, arr)=>{
 				if(el.value.length!=0)
 					arrBoolean[index]= true
 				else
-					arrBoolean[index]= false
+               if (index!= arr.length - 1) {
+                  arrBoolean[index]= false
+               }
 			})
 			if(arrBoolean.includes(false))
 				btn.setAttribute("disabled", "true")
