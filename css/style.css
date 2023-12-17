@@ -47,6 +47,11 @@ header #phone {
     border-radius: 50%;
     background: linear-gradient(143deg, #F57350 23.05%, #F4512D 104.84%);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: 0.6s;
+  }
+  header #phone:hover {
+    top: -10px;
   }
 }
 
@@ -288,6 +293,7 @@ footer #icons a:hover {
   margin: 24px auto 0;
 }
 .block_form .a_button[disabled] {
+  pointer-events: none;
   opacity: 0.4;
   cursor: default;
 }
@@ -432,7 +438,26 @@ a {
   border: 2px solid #000;
   font-size: 14px;
   background: none;
+  transition: 0.6s;
+  position: relative;
   cursor: pointer;
+}
+.a_button::before {
+  content: attr(data-content);
+  padding: inherit;
+  transition: 0.6s;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(143deg, #F57350 23.05%, #F4512D 104.84%);
+  opacity: 0;
+  color: #fff;
+}
+.a_button:hover {
+  border-color: transparent;
+  color: #fff;
+}
+.a_button:hover::before {
+  opacity: 1;
 }
 @media screen and (min-width: 768px) and (max-width: 1919px) {
   .a_button {

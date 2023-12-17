@@ -87,6 +87,7 @@
       background: none;
       margin: 24px auto 0;
       &[disabled]{
+         pointer-events: none;
          opacity: 0.4;
          cursor: default;
       }
